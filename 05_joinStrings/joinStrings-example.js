@@ -3,7 +3,15 @@ const thisYear = 1965;
 const firstName = "Carlos";
 const lastName = "Stevenson";
 
-const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
+const fullName = firstName + "" + lastName;
+const age = thisYear - birthYear;
+
+const greeting =
+  "Hello! My name is " +
+  fullName +
+  " and I am " +
+  (thisYear - birthYear) +
+  " years old.";
 
 console.log(greeting);
 
@@ -12,5 +20,5 @@ module.exports = {
   birthYear,
   thisYear,
   firstName,
-  lastName
-}
+  lastName,
+};
